@@ -1,0 +1,17 @@
+# -*- coding: utf-8 -*-
+a,b,c = input("Ingrese os tres valores: ").split()
+a = float(a)
+b = float(b)
+c = float(c)
+
+
+def MaiorEntreDoisNumeros(a,b):
+    maior = (a+b+abs(a-b))/2
+    return maior
+    
+numeroMaior = MaiorEntreDoisNumeros(a,b)
+
+numeroMaior = MaiorEntreDoisNumeros(numeroMaior,c)
+
+print("O numero maior é: {0}".format(numeroMaior))
+
